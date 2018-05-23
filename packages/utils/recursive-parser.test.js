@@ -53,3 +53,47 @@ defineTest(
 		mode: "super-man"
 	}
 );
+
+defineTest(
+	__dirname,
+	"remove",
+	"fixture-3",
+	"entry",
+	{
+		a: null,
+	}
+);
+
+defineTest(
+	__dirname,
+	"remove",
+	"fixture-3",
+	"plugins",
+	[
+		"plugin2"
+	]
+);
+
+defineTest(
+	__dirname,
+	"remove",
+	"fixture-3",
+	"module",
+	{
+		noParse: null
+	}
+);
+
+defineTest(
+	__dirname,
+	"remove",
+	"fixture-3",
+	"module",
+	{
+		rules: [
+			{
+				loader: "eslint-loader",
+			},
+		]
+	}
+);
