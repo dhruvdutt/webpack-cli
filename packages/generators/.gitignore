@@ -1,4 +1,0 @@
-*.js
-**/*.js
-!*.test.js
-!/**/*.test.js
